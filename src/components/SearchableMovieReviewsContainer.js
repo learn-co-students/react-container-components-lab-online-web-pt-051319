@@ -13,17 +13,6 @@ export default class SearchableMovieReviewsContainer extends Component {
     searchTerm: ""
   };
 
-  // componentDidUpdate(prevProps, prevState, snapshot) {
-  //   if (prevState.searchTerm !== this.state.searchTerm) {
-  //     var searchTerm = this.state.searchTerm;
-  //     fetch(URL + "&query=" + searchTerm)
-  //       .then(res => res.json())
-  //       .then(json => {
-  //         this.setState({ reviews: json.results });
-  //       });
-  //   }
-  // }
-
   handleChange = e => {
     this.setState({
       query: e.target.value
